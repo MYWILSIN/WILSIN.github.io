@@ -1,0 +1,93 @@
+
+.contenedor {
+	
+	box-shadow:0 5px 15px rgba(0,0,0,.5);
+
+	
+	border-radius: 20px;
+	background: rgba (0,2,2,.6);
+	background-color:black;
+	opacity:0.9;
+	padding-top:30px;
+	margin:1px auto;
+	width :550px;
+	height:300px;
+	text-align:center;
+	font-weight:bold;
+	
+	
+}
+
+
+
+body {
+  background-color: black;
+  background-image: url("http://mywilsin77.000webhostapp.com/imagen6.jpg");
+  background-size: cover;
+}
+
+
+
+a {
+text-align: right; 
+color : white;
+}
+
+
+nav {
+	
+text-align: center; 
+color : white;
+font-size: 30px; 
+font-family : Brush Script MT;
+ 
+}
+
+div {
+		
+text-align: center; 
+color : white;
+font-size: 30px; 
+font-family : Didot;
+}
+
+h2 {
+text-align: center; 
+color : white;
+font-size: 42px; 
+font-family : Brush Script MT;
+
+}
+
+h4 {
+text-align: center; 
+color : white;
+}
+
+h5 {
+text-align: center; 
+color : white;
+}
+
+li {
+text-align: center; 
+color : white;
+}
+
+
+
+
+p   {
+
+font-family : Didot;
+ font-size: 22px; 
+text-align : justify;
+color : white;
+
+}
+hr {
+text-align : center; width: 80%;
+ border : 1px dashed blue; 
+ font-size: 22px; 
+text-align : justify;
+color : white;}

@@ -1,0 +1,122 @@
+
+
+
+body
+{
+margin:o;
+padding:0;
+background:#262626;
+font-family: sans-serif;
+color:black;
+zoom:80%;
+  background-image: url("https://images6.alphacoders.com/648/thumb-1920-648552.jpg");
+  background-size:cover;
+
+
+}
+
+.contenedorimagen
+{
+	width:1200px;
+	margin:70px auto 0;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.contenedorimagen .caja
+{
+	position:relative;
+	width:270px;
+	height:270px;
+	margin:10px;
+	box-sizing: border-box;
+	display:inline-block;
+	
+}
+
+.contenedorimagen .caja .imgcaja 
+
+{
+	position:relative;
+	overflow:hidden;
+	
+}
+
+
+.contenedorimagen .caja .imgcaja img 
+
+{
+	max-width:100%;
+	transition: transform 2s;
+		
+}
+
+.contenedorimagen .caja:hover .imgcaja img 
+
+{
+	transform: scale(1.2);
+}
+
+.contenedorimagen .caja .detalles
+
+{
+	
+	position:absolute;
+	top:10px;
+	left:10px;
+	bottom:10px;
+	right:10px;
+	background: rgba(0,0,0,0.6);
+	transform:scaleY(0);
+	transition:transform .5s;
+	border-radius: 4px;
+	}
+
+.contenedorimagen .caja:hover .detalles
+
+{
+	transform:scaleY(1);
+	
+}
+
+.contenedorimagen .caja .detalles .contenido
+
+{
+	position:absolute;
+	top:50px;
+	transform: translateY(-50%);
+	text-align:center;
+	padding:25px;
+	
+}
+
+/*TITULO*/
+
+.contenedorimagen .caja .detalles .contenido h2
+
+{
+	
+	margin-TOP:10px;
+	padding:0;
+	font-size:20px;
+	color:WHITE;
+}
+
+
+/*Parrafo*/
+
+.contenedorimagen .caja .detalles .contenido p
+
+{
+	
+	margin:10 px 0 0;
+	padding:0;
+	font-size:20px;
+	color:WHITE;
+}
+
+
+
+
+
+
