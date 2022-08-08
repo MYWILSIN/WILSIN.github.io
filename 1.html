@@ -1,57 +1,135 @@
 <!doctype html>
-<html lang="es">
+<html>
 <head>
-<meta charset="utf-8"/>
-<title>Hoja de Vida</title>
-<meta name="title" content="1">
-<meta name="description" content="Hoja de Vida WILLSON DURAN">
-<link rel="stylesheet" type="text/css" href="css\estilos4.css" />  
-<link  href="https://fonts.googleapis.com/css2?family=Grandstander&family=Krona+One&display=swap"  rel="stylesheet">
-<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
-<body style="background:black">
-
-</head>        
+<meta charset="UTF-8">
+<title>WILL</title>
+<style>
+#miCanvas{  border:dotted 4px red;
+                background:black;}
+</style>
+<script>
+window.onload = function(){
+    var canvas = document.getElementById("miCanvas");
+    if(canvas && canvas.getContext){
+        var ctx = canvas.getContext("2d");
+        if(ctx){
+            //Descripcion de lineas
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "red";
+            //Dibujamos esquina
+            ctx.beginPath();
+            ctx.lineJoin = "round";
+            ctx.lineJoin = "bevel";
+            ctx.lineJoin = "mitter";
+            ctx.moveTo(25,40);
+			//izquierda arriba
+            ctx.lineTo(92,144);
+			// derecha abajo
+			//W
+			ctx.lineCap = "round";
+			ctx.moveTo(118,95);
+            ctx.lineTo(92,144);
+			ctx.moveTo(118,95);
+            ctx.lineTo(150,150);
+			ctx.moveTo(200,40);
+			// izquierda arriba
+            ctx.lineTo(150,150);
+			// derecha abajo
+            ctx.stroke();
+			
+			//i
+			
+			ctx.beginPath();
+            ctx.moveTo(200,95);
+			// izquierda arriba
+            ctx.lineTo(200,150);
+			// derecha abajo
+            ctx.stroke();
+			
+			//punto i
+			ctx.beginPath();
+            ctx.moveTo(200,75);
+			// izquierda arriba
+            ctx.lineTo(200,80);
+			// derecha abajo
+            ctx.stroke();
+			
+				//L
+			
+			ctx.beginPath();
+            ctx.moveTo(250,50);
+			// izquierda arriba
+            ctx.lineTo(250,150);
+			ctx.moveTo(270,150);
+			ctx.lineTo(250,150);
+			// derecha abajo
+            ctx.stroke();
+			
+			
+			
+			
+			//S
+			ctx.beginPath();
+            //Primer punto
+            ctx.moveTo(340,50);
+            //Dibujamos la curva
+            ctx.bezierCurveTo(250,120, 340,80, 300,170);
+            //Dibujamos la curva
+            ctx.stroke();
+            
+			
+			//O 
+			ctx.beginPath();
+            ctx.arc(380,120,30, 0, 2*Math.PI,true);
+            ctx.stroke();
+			
+			//N 
+			
+			
+			ctx.beginPath();
+			ctx.moveTo(420,80);
+			// izquierda arriba
+            ctx.lineTo(440,150);
+			// derecha abajo
+			ctx.moveTo(420,80);
+			// izquierda arriba
+            ctx.lineTo(470,150);
+			// derecha abajo
+			 ctx.moveTo(460,80);
+			 // izquierda arriba
+            ctx.lineTo(470,145);
+			// derecha abajo
+			ctx.stroke();
+			
+			
+			
+      
+            var imagen = new Image();
+            //
+            function procesaImagen(){
+                ctx.drawImage(imagen,500,100);         
+            }
+            //
+            imagen.src = "imagenes/will.jpg";
+            imagen.onload = function(e){
+                procesaImagen();
+            }
+		
+			
+			
+			
+			
+        } else {
+            alert("Error al crear tu contexto");    
+        }
+    }
+}
+</script>
+</head>
 <body>
-<header>
-<div>
-
-
-<section class="main">
-<section class="articulos">
-<article>
-<h1 class="animate__animated  animate__zoomInDown">WILLSON DURAN ORTIZ</h1>
-<p class="animate__animated  animate__zoomInDown">2022</p>
-</article>
-<article>
-<h1 class="animate__animated  animate__zoomInDown">INGENIERIA EN SISTEMAS</h1>
-<br>
-<br>
-<p class="animate__animated  animate__zoomInDown">MATERIA : SISTEMAS OPERATIVOS</p>
-<p class="animate__animated  animate__zoomInDown">QUINTO SEMESTRE </p>
-<p class="animate__animated  animate__zoomInDown">DOCENTE: JESUS RUBIO </p>
-
-</article>
-</section>
-
-<aside>
-<h2>   </h2> 
-<a href="https://es-la.facebook.com/AlanTuringCodebreaker/" target="_blank" style="color:white "><img src="https://i.pinimg.com/originals/79/21/df/7921dffb0c61924256df4f40bf5d1fe0.gif" width="120" height="120"/></a>
-<br>
-<br>
-<a target="hojadevida" href="https://www.youtube.com/watch?v=nQmDYlI89GM" target="_blank" style="color:white "><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png" width="80" height="80"/></a>
-<br>
-<br>
-<a href="https://www.instagram.com/alanturingofficial/?hl=es-la" target="_blank" style="color:white "><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png
-" width="120" height="120"/></a>
-<br>
-<br>
-
-
-
-</aside>
-</section>
-<footer>
-<p> WILSON DURAN ORTIZ </p>
-</footer>
+<h1>WILLSONGOLPEADOR</h1>
+<canvas id="miCanvas" width="700px" height="400px">
+Tu navegador no soporta CANVAS
+</canvas>
 </body>
 </html>

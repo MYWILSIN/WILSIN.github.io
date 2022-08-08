@@ -1,8 +1,9 @@
 <!doctype html>
+
+
+
 <html>
 <head>
-
-
 <meta charset="UTF-8">
 <title>Invasores</title>
 
@@ -19,8 +20,8 @@ h1{
     border:dotted 2px yellow;
 
     background:black;   
+background-image: url(https://static.independentespanol.com/2022/02/09/21/iStock-1198015422.jpg?quality=75&width=982&height=726&auto=webp)
 	  
-background-image: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2011/03/Star_Trek__Enterprise_A__Blue_Planet-w800.jpg?quality=50&strip=all)
 
 
 }
@@ -300,7 +301,7 @@ window.onload = function(){
 			 
              imagenEnemigo = new Image();
              imagenEnemigo.src = "imagenes/invader.fw.png";
-             imagen.src = "imagenes/torre.fw.png";
+             imagen.src = "imagenes/torre2.fw.png";
 			 
              mensaje("INVASORES");
              imagen.onload = function(){
@@ -344,5 +345,8 @@ Tu navegador no soporta CANVAS
 <source src="sonidos/PERDISTE_PERRO.mp3">
 <source src="sonidos/PERDISTE_PERRO.ogg">
 </audio>
+
+
+
 </body>
 </html>    
